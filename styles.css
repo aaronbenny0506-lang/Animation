@@ -1,0 +1,16 @@
+html {
+  background-color: #2e1a47;
+}
+
+#page-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 200px;
+  height: auto;
+  opacity: 1;
+}
