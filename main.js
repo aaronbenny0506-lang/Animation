@@ -13,14 +13,15 @@ const alice1 = document.querySelector("#alice1");
 const alice2 = document.querySelector("#alice2");
 const alice3 = document.querySelector("#alice3");
 
-// The solution function to sequence them
 async function sequenceAlice() {
   try {
     // Wait for alice1 to finish spinning
-    await alice1.animate(aliceTumbling, aliceTiming).finished;
+    const anim1 = alice1.animate(aliceTumbling, aliceTiming);
+    await anim1.finished;
     
     // Wait for alice2 to finish spinning
-    await alice2.animate(aliceTumbling, aliceTiming).finished;
+    const anim2 = alice2.animate(aliceTumbling, aliceTiming);
+    await anim2.finished;
     
     // Finally, spin alice3
     alice3.animate(aliceTumbling, aliceTiming);
